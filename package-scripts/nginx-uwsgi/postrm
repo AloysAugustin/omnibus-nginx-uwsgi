@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# Perform necessary nginx-uwsgi removal steps
+# after package is uninstalled.
+#
+
+echo "nginx-uwsgi has been uninstalled!"
+
+exit 0
