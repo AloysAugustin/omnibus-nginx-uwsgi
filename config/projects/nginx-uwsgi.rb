@@ -21,6 +21,7 @@ dependency "prepare"
 # nginx-uwsgi dependencies/components
 dependency "nginx"
 dependency "uwsgi"
+dependency "supervisor"
 
 # Version manifest file
 dependency "version-manifest"
