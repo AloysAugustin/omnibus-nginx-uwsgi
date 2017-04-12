@@ -18,13 +18,17 @@ APT_CMD=$(which apt-get)
 if [[ ! -z $YUM_CMD ]]; then
     echo "Yum-based distribution detected"
     cat /opt/nginx-uwsgi/embedded/defaults/initscripts/init_el > /etc/init.d/supervisor
+    chmod a+x /etc/init.d/supervisor
     chkconfig supervisor on
 elif [[ ! -z $APT_CMD ]]; then
     echo "Debian-based distribution detected"
     cat /opt/nginx-uwsgi/embedded/defaults/initscripts/init_debian > /etc/init.d/supervisor
+    chmod a+x /etc/init.d/supervisor
     update-rc.d supervisor enable
 else
     echo 'Unknown distribution, init script not installed'
 fi
+
+
 
 exit 0
