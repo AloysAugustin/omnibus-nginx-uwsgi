@@ -5,6 +5,9 @@ This project creates full-stack platform-specific packages for
 
 Installation
 ------------
+
+Required dependencies: git v2+, python-dev, rpm-build (yum based) , rvm, gem install bundler
+
 You must have a sane Ruby 2.0.0+ environment with Bundler installed. Ensure all
 the required gems are installed:
 
