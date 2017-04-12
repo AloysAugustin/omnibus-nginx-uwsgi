@@ -12,6 +12,4 @@ error_exit()
   exit 1
 }
 
-rm /etc/init.d/supervisor
-
 exit 0
