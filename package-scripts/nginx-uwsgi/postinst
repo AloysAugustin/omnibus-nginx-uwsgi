@@ -12,6 +12,14 @@ error_exit()
   exit 1
 }
 
-echo "Thank you for installing nginx-uwsgi!"
+if /usr/bin/rpm -q -f /usr/bin/rpm >/dev/null 2>&1; then
+    echo "Yum-based distribution detected"
+    cp -f /opt/nginx-uwsgi/embedded/defaults/initscripts/init_el /etc/init.d/supervisor
+    chkconfig supervisor on
+else
+    echo "Debian-based distribution detected"
+    cp -f /opt/nginx-uwsgi/embedded/defaults/initscripts/init_debian /etc/init.d/supervisor
+    update-rc.d supervisor enable
+fi
 
 exit 0

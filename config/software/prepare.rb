@@ -25,7 +25,7 @@ skip_transitive_dependency_licensing true
 
 build do
   block do
-    %w{embedded embedded/lib embedded/bin bin}.each do |dir|
+    %w{embedded embedded/lib embedded/bin bin etc etc/uwsgi.d}.each do |dir|
       command "mkdir #{install_dir}/#{dir}"
       command "chmod 755 #{install_dir}/#{dir}"
       command "touch -a #{install_dir}/#{dir}/.gitkeep"

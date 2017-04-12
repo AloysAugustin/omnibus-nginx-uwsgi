@@ -23,6 +23,8 @@ dependency "nginx"
 dependency "uwsgi"
 dependency "supervisor"
 
+dependency "config-files"
+
 # Version manifest file
 dependency "version-manifest"
 
