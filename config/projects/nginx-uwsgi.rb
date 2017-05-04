@@ -19,6 +19,7 @@ build_iteration 1
 dependency "prepare"
 
 # nginx-uwsgi dependencies/components
+dependency "git"
 dependency "nginx"
 dependency "uwsgi"
 dependency "supervisor"
