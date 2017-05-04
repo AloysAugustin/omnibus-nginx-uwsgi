@@ -2,7 +2,7 @@ name 'uwsgi'
 default_version '2.0.15'
 
 dependency 'pip'
-dependency 'libexpat'
+dependency 'expat'
 
 build do
     env = with_standard_compiler_flags(with_embedded_path)

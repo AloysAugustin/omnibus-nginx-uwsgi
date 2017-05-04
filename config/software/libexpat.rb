@@ -1,4 +1,4 @@
-name 'libexpat'
+name 'expat'
 default_version '2.2.0'
 
 source url: "https://netcologne.dl.sourceforge.net/project/expat/expat/#{version}/expat-#{version}.tar.bz2"
